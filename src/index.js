@@ -1,5 +1,5 @@
 module.exports = function reverse (n) {
 
-  return n.toString().split('').reverse().join('');
+  return n.toString().replace(/-/g, '').split('').reverse().join('');
 }
 
